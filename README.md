@@ -1,2 +1,0 @@
-# OhMyFood
- Projet 2

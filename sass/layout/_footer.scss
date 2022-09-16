@@ -1,0 +1,39 @@
+/*footer identique sur toutes les pages du site*/
+
+.footer{
+    background-color:($footer-color);
+    padding: 20px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    font-size: ($font-size);
+
+    &__logo{
+        font-family: ($secondary-font);
+        font-size: ($font-size)+2px;
+    }
+
+    & ul{
+        list-style-type: none;
+        line-height: 30px;
+    }
+
+    & li{
+       margin-left: -40px;
+        
+        & a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.fa-utensils{
+    margin-right: 12px;
+    font-size: ($font-size)-2px;
+}
+
+.fa-handshake-angle{
+    margin-right: 6px;
+    font-size: ($font-size)-2px;
+}

@@ -1,0 +1,26 @@
+/*polices du site*/
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Shrikhand', sans-serif;
+$font-size: 16px;
+
+/*couleurs du site*/
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #F6F6F6;
+$shadow-color: #D1D1D1;
+$footer-color: #353535;
+
+/*mixins*/
+
+@mixin shadow{
+    box-shadow: 3px 3px 15px 1px ($shadow-color);
+}
+
+@mixin ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,135 @@
+/*btn explorer nos restaurants avec un changement de style au survol*/
+
+.search__btn{
+    
+    display: flex;
+    justify-content: center;
+    
+    input[type=button]{
+    height: 50px;
+    width: 230px;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, ($secondary-color), ($primary-color));
+    font-size: ($font-size);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom:50px;
+    margin-top: 25px;
+    @include shadow;
+
+        &:hover{
+            background: linear-gradient(to bottom, lighten($secondary-color, 3%), lighten($primary-color, 3%));
+            box-shadow: 5px 5px 10px 1px darken($shadow-color, 10%);
+        }
+    }
+} 
+
+/*btn étapes de fonctionnement avec coloration de l'icône et du fond au survol*/
+
+.operation__btn{
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 85%;
+    font-weight: 500;
+    margin: 10px auto 10px 30px;
+    padding: 10px 0 10px 50px;
+    background-color: ($background-color);
+    border-radius: 20px;
+    @include shadow;
+    cursor: pointer;
+
+        & h2{
+            font-size: ($font-size)+2px;
+            font-weight: 500;
+        }
+
+        & i {
+            font-size: ($font-size)+4px;
+            color: darken($background-color, 50%);
+            padding-right: 20px;
+        }
+
+        &:hover{
+            background-color: lighten($primary-color, 35%);
+                
+                & i{
+                color: ($primary-color)
+                }         
+        }
+}
+
+/*btn sélection plat caché avec une marge droite négatif qui apparaît de droite à gauche au survol, l'animation se situe dans le fichier animation*/
+
+.check__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    border-radius: 0 10px 10px 0;
+    background-color: ($tertiary-color);
+    visibility: hidden;
+    margin-right: -50px;
+
+    & i{
+        font-size: ($font-size)+6px;
+        border-radius: 20px;
+        color: white;
+    }
+}
+
+/*partie responsive des btn*/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .search__btn{
+      
+        input[type=button]{
+        height: 60px;
+        width: 300px;
+        font-size: ($font-size)+2px;
+        }
+    
+    .operation__btn{
+
+        width: 90%;
+        font-weight: 400;
+        padding: 10px;
+
+            & i {
+                padding-right: 15px;
+            }
+        }   
+    }
+}
+
+@media (min-width: 992px){
+
+    .search__btn{
+      
+        input[type=button]{
+        height: 60px;
+        width: 300px;
+        font-size: ($font-size)+2px;
+        }
+    }
+    
+    .operation__btn{
+
+        display: flex;
+        justify-content: center;
+        width: 35%;
+        margin: 10px auto 10px auto;
+        padding: 10px 0 10px 0;
+
+        & p{
+            font-size: ($font-size)+2px;
+        }
+
+        & i{
+            font-size: ($font-size)+2px;
+        }
+    }   
+}

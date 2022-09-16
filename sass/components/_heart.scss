@@ -1,0 +1,35 @@
+/*deux coeurs dont un qui apparaît et se rempli au survol*/
+
+.caption__heart{
+
+    display: block;
+    position: relative;
+    font-size: ($font-size)+12px;
+    margin: 25px 20px 30px auto;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:hover .fa-regular{
+        transform: scale(0);
+    }
+
+    &:hover .fa{
+        transform: scale(1)
+    }
+}
+
+.fa-regular {
+    position: absolute;
+}
+      
+.fa {
+    background: linear-gradient(to top right,($secondary-color), ($primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transform: scale(0);
+}
