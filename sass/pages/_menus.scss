@@ -1,7 +1,6 @@
 /*code commun aux quatre pages menu*/
 
 .restaurant{
-
     &__name{
         display: flex;
         align-items: center;
@@ -16,7 +15,6 @@
 }
 
 .menu{
-
     background-color: ($background-color);
     border-radius: 30px 30px 0 0;
     position: relative;
@@ -37,7 +35,6 @@
 }    
 
 .item{
-
     &__card{
         display: flex;
         justify-content: space-between;
@@ -84,7 +81,6 @@
 @media (min-width: 768px) and (max-width: 991px){
 
     .restaurant{
-
         &__name{
       
             & h1{
@@ -97,7 +93,6 @@
 @media (min-width: 992px){
 
     .restaurant{
-
         &__name{
       
             & h1{
@@ -118,7 +113,6 @@
     }
 
     .item{
-
         &__card{
             width: 330px;
         }

@@ -1,7 +1,6 @@
 /*btn explorer nos restaurants avec un changement de style au survol*/
 
 .search__btn{
-    
     display: flex;
     justify-content: center;
     
@@ -28,7 +27,6 @@
 /*btn étapes de fonctionnement avec coloration de l'icône et du fond au survol*/
 
 .operation__btn{
-
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
@@ -85,7 +83,6 @@
 @media (min-width: 768px) and (max-width: 991px){
 
     .search__btn{
-      
         input[type=button]{
         height: 60px;
         width: 300px;
@@ -93,7 +90,6 @@
         }
     
     .operation__btn{
-
         width: 90%;
         font-weight: 400;
         padding: 10px;
@@ -108,7 +104,6 @@
 @media (min-width: 992px){
 
     .search__btn{
-      
         input[type=button]{
         height: 60px;
         width: 300px;
@@ -117,7 +112,6 @@
     }
     
     .operation__btn{
-
         display: flex;
         justify-content: center;
         width: 35%;
