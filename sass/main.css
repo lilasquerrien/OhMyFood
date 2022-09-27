@@ -936,9 +936,11 @@ body {
   margin-top: -40px;
   padding-top: 10px;
 }
-.menu__title {
+.menu h2 {
   margin-left: 10px;
   padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .menu__underline {
   width: 40px;
@@ -959,31 +961,34 @@ body {
   cursor: pointer;
   box-shadow: 3px 3px 15px 1px #D1D1D1;
 }
+.item__card p {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+  margin-right: 5px;
+  font-size: 14px;
+}
 .item__text {
   display: flex;
   flex-direction: column;
   width: 85%;
   overflow: hidden;
 }
+.item__text h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 12px 5px 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
 .item__text h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin: 10px 0 0 10px;
-}
-.item__text p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin: 10px 5px 10px 10px;
+  margin: 0px 5px 12px 10px;
   font-size: 14px;
-}
-.item__price {
-  display: flex;
-  align-items: flex-end;
-  font-weight: 600;
-  margin: 40px 5px 0 0;
-  font-size: 14px;
+  font-weight: 300;
 }
 
 /*partie responsive des menus*/
